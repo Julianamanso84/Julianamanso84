@@ -1,0 +1,56 @@
+# 🛒 Análise de Dados — Base de Produtos de Supermercado (Chile)
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-2.0+-blue.svg)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-orange.svg)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.12+-green.svg)
+![Plotly](https://img.shields.io/badge/Plotly-5.0+-purple.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## 📌 Descrição
+
+Projeto do **Módulo 13 — Fundamentos da Descoberta de Dados**, que aplica conceitos estatísticos e de visualização de dados sobre a base de produtos de um supermercado chileno.
+
+O objetivo é explorar a distribuição de preços e descontos, identificando padrões por categoria e marca.
+
+## 🗂️ Base de Dados
+
+O dataset (`CSV`) contém as seguintes colunas:
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `title` | `string` | Nome do produto |
+| `Marca` | `string` | Marca do produto |
+| `Preco_Normal` | `float` | Preço normal (sem desconto) |
+| `Preco_Desconto` | `float` | Preço com desconto aplicado |
+| `Preco_Anterior` | `float` | Preço antes do desconto |
+| `Desconto` | `float` | Total de desconto aplicado |
+| `Categoria` | `string` | Categoria do produto (em espanhol) |
+
+> ⚠️ **Observação:** colunas com valor `0` indicam produtos sem desconto aplicado.
+
+### Categorias presentes
+
+`lacteos`, `congelados`, `belleza-y-cuidado-personal`, `comidas-preparadas`, `verduras`, `frutas`, `instantaneos-y-sopas`.
+
+## 🧰 Tecnologias Utilizadas
+
+- **Python 3**
+- **Pandas** — manipulação e análise de dados
+- **Matplotlib** e **Seaborn** — visualizações estáticas
+- **Plotly Express** — visualizações interativas
+
+## 🚀 Instalação
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+# 2. Crie um ambiente virtual (opcional, mas recomendado)
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+# 3. Instale as dependências
+pip install -r requirements.txt
